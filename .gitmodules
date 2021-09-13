@@ -16,6 +16,6 @@
 [submodule "Services"]
 	path = Services
 	url = git@github.com:cookbookly/Services.git
-[submodule "aws/--force"]
-	path = aws/--force
+[submodule "aws/cdk"]
+	path = aws/cdk
 	url = git@github.com:cookbookly/cdk.git
