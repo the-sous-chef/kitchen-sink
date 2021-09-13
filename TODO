@@ -1,0 +1,5 @@
+- create env to run all services, serverless, and web server
+- fully type configuration for sous-chef and SousChef
+- use configuration
+- integrate localstack
+- use kubernetes

@@ -1,0 +1,21 @@
+- [ ] Recipes that share ingredients to help reduce waste
+- [ ] Suggest recipes based on theme, history
+- [ ] Find recipes for a specific ingredient
+- [ ] Discover reipces and like (see tinder)
+- [ ] Set time to eat, give time to start, set reminder
+- [ ] Display recipes on nest hub or alexa show, phone
+- [ ] Create cookbook; add/manage recipes
+- [ ] Browse public recipes
+- [ ] Upload recipes to global
+- [ ] Family sharing
+- [ ] Create recipe
+- [ ] Optimize instructions
+- [ ] Pictures per instruction (optional)
+- [ ] How-to videos
+- [ ] Create shopping list from recipe(s)
+- [ ] Scale ingredients per serving size
+- [ ] Family gathering meal planning and election of what to bring
+- [ ] Recipes for drinks too
+- [ ] Categories and keyword tagging
+- [ ] Ingredient substitution
+- [ ] How to make following steps easier/less stressful, especially when a lot of things are going on?
