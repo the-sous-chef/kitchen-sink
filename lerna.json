@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "aws/*",
+    "mobile/*",
+    "serverless/*",
+    "web/*"
+  ],
+  "version": "1.0.0"
+}
