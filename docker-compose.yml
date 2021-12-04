@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  localstack:
+    image: localstack/localstack
+    container_name: localstack_main
+    ports:
+      - "0.0.0.0:53:53"
+      - "0.0.0.0:443:443"
+      - "0.0.0.0:2772:2772"
+      - "0.0.0.0:4510-4530:4510-4530"
+      - "0.0.0.0:4566-4620:4566-4620"
+    env_file: .env
+    network_mode: bridge
+    volumes:
+      - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"

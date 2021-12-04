@@ -396,3 +396,4 @@ dist/**/*
 # Local configuration
 local.json5
 .cache
+data/localstack
