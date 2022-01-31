@@ -22,5 +22,8 @@
   "homepage": "https://github.com/cookbookly/cookbookly#readme",
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "volta": {
+    "node": "16.13.2"
   }
 }
