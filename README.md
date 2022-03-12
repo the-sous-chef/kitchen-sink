@@ -8,11 +8,12 @@ Monorepo for Cookbookly apps and services
 
 - [Python]()
 - [node]()
-- [Dcker]()
+- [Docker]()
+- [awslocal](https://github.com/localstack/awscli-local)
 
 # Setup
 
-Update `${HOME}/.aws/credentials` and the following profile:
+Update `${HOME}/.aws/credentials` to contain the following profiles:
 
 (TODO use sts)
 
@@ -20,6 +21,18 @@ Update `${HOME}/.aws/credentials` and the following profile:
 [souschef]
 aws_access_key_id     = <value>
 aws_secret_access_key = <value>
+
+[localstack]
+aws_access_key_id=test
+aws_secret_access_key=test
+```
+
+And update `${HOME}/.aws/config` and add:
+
+```
+[profile localstack]
+region=us-east-1
+output=json
 ```
 
 ```sh
@@ -30,13 +43,9 @@ npx lerna bootstrap
 
 # Development
 
-Prior to running `localstack` via `docker-compose up --build`, run:
+To run `localstack`,  `docker-compose up --build`
 
-```sh
-export AWS_ACCESS_KEY_ID=test
-export AWS_SECRET_ACCESS_KEY=test
-export AWS_DEFAULT_REGION=us-east-1
-```
+To run AWS CLI commands against localstack, use awscli-local.
 
 In vscode, run `cmd-shift-P` and edit the `Thundra` configuration:
 
