@@ -1,21 +1,18 @@
-[submodule "web/sous-chef"]
-	path = web/sous-chef
-	url = git@github.com:cookbookly/sous-chef.git
-[submodule "mobile/SousChef"]
-	path = mobile/SousChef
-	url = git@github.com:cookbookly/SousChef.git
-[submodule "serverless/lambda-authorizer"]
-	path = serverless/lambda-authorizer
-	url = git@github.com:cookbookly/lambda-authorizer.git
-[submodule "serverless/firebase-auth"]
-	path = serverless/firebase-auth
-	url = git@github.com:cookbookly/firebase-auth.git
 [submodule "serverless/apollo-gateway"]
 	path = serverless/apollo-gateway
 	url = git@github.com:cookbookly/apollo-gateway.git
-[submodule "Services"]
-	path = Services
-	url = git@github.com:cookbookly/Services.git
-[submodule "aws/cdk"]
-	path = aws/cdk
-	url = git@github.com:cookbookly/cdk.git
+[submodule "packages/sous-chef-web"]
+	path = packages/sous-chef-web
+	url = git@github.com:the-sous-chef/sous-chef-web.git
+[submodule "packages/aws"]
+	path = packages/aws
+	url = git@github.com:the-sous-chef/aws.git
+[submodule "packages/sous-chef-mobile"]
+	path = packages/sous-chef-mobile
+	url = git@github.com:the-sous-chef/sous-chef-mobile.git
+[submodule "packages/Services"]
+	path = packages/Services
+	url = git@github.com:the-sous-chef/Services.git
+[submodule "packages/lambda-authorizer"]
+	path = packages/lambda-authorizer
+	url = git@github.com:the-sous-chef/lambda-authorizer.git
