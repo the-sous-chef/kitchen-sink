@@ -13,5 +13,5 @@ services:
     env_file: .env
     network_mode: bridge
     volumes:
-      - "./data/localstack/tmp:/tmp/localstack"
+      - "./data:/tmp/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
