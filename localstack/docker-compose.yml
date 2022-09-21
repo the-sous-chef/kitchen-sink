@@ -2,7 +2,7 @@ version: "3.9"
 services:
   localstack:
     image: localstack/localstack
-    container_name: localstack_main
+    container_name: localstack
     ports:
       - "127.0.0.1:53:53"
       - "127.0.0.1:53:53/udp"
@@ -13,5 +13,10 @@ services:
     env_file: .env
     network_mode: bridge
     volumes:
-      - "./data:/tmp/localstack"
+      - "./data:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./mocks:/var/lib/sc/mocks"
+      - "../packages/aws:/var/lib/sc/aws"
+      - "../packages/Services:/var/lib/sc/Services"
+      - "../packages/sous-chef-web:/var/lib/sc/sous-chef-web"
+      - "./init.sh:/etc/localstack/init/ready.d/ready_01.sh"

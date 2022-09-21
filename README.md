@@ -1,77 +1,30 @@
-# Turborepo starter with npm
+# The Kitchen Sink
 
-This is an official starter turborepo.
-
-## What's inside?
-
-This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+Development environment for The Sous Chef ecosystem.
 
 ## Setup
 
-This repository is used in the `npx create-turbo@latest` command, and selected when choosing which package manager you wish to use with your monorepo (npm).
+### Install
 
-### Build
+- [volta](https://volta.sh/). Used to manage our node environments
+- [dotnet core](https://dotnet.microsoft.com/en-us/download)
+- [Docker](https://docs.docker.com/get-docker/)
 
-To build all apps and packages, run the following command:
+### Contributing
 
-```
-cd my-turborepo
-npm run build
-```
+TBD
 
-### Develop
+### Developing
 
-To develop all apps and packages, run the following command:
+Whether you're testing one service in isolation or testing integration, we use [localstack](https://localstack.cloud/) to mock AWS services instead of running development clouds or testing against production. To run localstack:
 
-```
-cd my-turborepo
-npm run dev
-```
+```sh
+cd localstack
 
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+docker-compose up --build
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+This will start locastack and deploy all cloud infrastructure. From there you can individually deploy services/servers.
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+- [ ] TODO allow selection of which service infrastructure to deploy
+- [ ] TODO docker caching or cloud pods for faster startup
