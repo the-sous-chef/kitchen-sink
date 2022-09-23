@@ -19,3 +19,5 @@
 - [ ] Categories and keyword tagging
 - [ ] Ingredient substitution
 - [ ] How to make following steps easier/less stressful, especially when a lot of things are going on?
+- [ ] Social media and integrations
+- [ ] Enterprise solution for restraunts, caterers, and chefs

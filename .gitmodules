@@ -1,6 +1,3 @@
-[submodule "serverless/apollo-gateway"]
-	path = serverless/apollo-gateway
-	url = git@github.com:cookbookly/apollo-gateway.git
 [submodule "packages/sous-chef-web"]
 	path = packages/sous-chef-web
 	url = git@github.com:the-sous-chef/sous-chef-web.git
