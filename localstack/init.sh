@@ -73,10 +73,11 @@ function main() {
     cd $APP_ROOT/sous-chef-web/cdk/apps/infrastructure
     cdklocal deploy --all --require-approval never
 
-    echo ">>> Upload mock configuration folder to S3"
-    cd $APP_ROOT
-    aws --endpoint-url=http://localhost:4566 s3 cp /var/lib/sc/mocks/appConfig.json s3://sous-chef-web-configuration/development/config.json
-    aws --endpoint-url=http://localhost:4566 s3 ls s3://sous-chef-web-configuration/development
+    # Waiting on https://github.com/localstack/localstack/issues/6892
+    # echo ">>> Upload mock configuration folder to S3"
+    # cd $APP_ROOT
+    # aws --endpoint-url=http://localhost:4566 s3 cp /var/lib/sc/mocks/appConfig.json s3://sous-chef-web-configuration/development/config.json
+    # aws --endpoint-url=http://localhost:4566 s3 ls s3://sous-chef-web-configuration/development
 
     # Waiting on https://github.com/localstack/localstack/issues/6892
     # echo ">>> Trigger an app config deployment"
