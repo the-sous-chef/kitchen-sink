@@ -13,3 +13,12 @@
 [submodule "packages/lambda-authorizer"]
 	path = packages/lambda-authorizer
 	url = git@github.com:the-sous-chef/lambda-authorizer.git
+[submodule "pacakges/eslint-config"]
+	path = pacakges/eslint-config
+	url = git@github.com:the-sous-chef/eslint-config.git
+[submodule "packages/eslint-config"]
+	path = packages/eslint-config
+	url = git@github.com:the-sous-chef/eslint-config.git
+[submodule "packages/standards"]
+	path = packages/standards
+	url = git@github.com:the-sous-chef/standards.git
