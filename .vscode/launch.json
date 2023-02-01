@@ -8,8 +8,22 @@
       "name": "Attach to Chrome",
       "port": 9222,
       "request": "attach",
-      "type": "pwa-chrome",
+      "type": "chrome",
       "webRoot": "${workspaceFolder}"
-    },
+    }, {
+      "name": "Docker: Attach to Node",
+      "type": "node",
+      "request": "attach",
+      "restart": true,
+      "port": 9229,
+      "address": "localhost",
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/opt/app",
+      "sourceMaps": true,
+      // "outFiles": [
+      //   "${workspaceFolder}/**/*.(j|t)s(x)?",
+      //   "**/node_modules/**"
+      // ]
+    }
   ]
 }

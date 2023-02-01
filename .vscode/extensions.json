@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "amazonwebservices.aws-toolkit-vscode",
+        "cschleiden.vscode-github-actions",
         "donjayamanne.githistory",
         "eamodio.gitlens",
         "eg2.vscode-npm-script",
