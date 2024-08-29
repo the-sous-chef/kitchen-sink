@@ -7,9 +7,6 @@
 [submodule "packages/sous-chef-mobile"]
 	path = packages/sous-chef-mobile
 	url = git@github.com:the-sous-chef/sous-chef-mobile.git
-[submodule "packages/Services"]
-	path = packages/Services
-	url = git@github.com:the-sous-chef/Services.git
 [submodule "packages/lambda-authorizer"]
 	path = packages/lambda-authorizer
 	url = git@github.com:the-sous-chef/lambda-authorizer.git
@@ -22,3 +19,6 @@
 [submodule "packages/standards"]
 	path = packages/standards
 	url = git@github.com:the-sous-chef/standards.git
+[submodule "packages/ingredients-api"]
+	path = packages/ingredients-api
+	url = git@github.com:the-sous-chef/ingredients-api.git
